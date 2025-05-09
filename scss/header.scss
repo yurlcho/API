@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+$fontcolor : #121212;
+
+// all
+* {
+    color: $fontcolor;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+    display: flex;
+    font-size: 12px;
+    z-index: 17;
+}
+
+// 헤더
+#header1 {
+    width: 100vw;
+    height: 70px;
+    background-color: #f2f2f2;
+    text-align: center;
+
+    img {
+        height: 100%;
+    }
+}
+
+#header2 {
+    width: 100vw;
+    height: 42px;
+    margin: 0 auto;
+    background-color: #fff;
+    
+#hd2ct {
+  width: 1200px;
+  height: 42px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #f2f2f2;
+
+  svg {
+    position: absolute;
+    z-index: 14;
+  }
+
+  #ptbox {
+    
+    a {
+      position: absolute;
+      z-index: 50;
+      text-decoration: none;
+      color: #fff;
+      line-height: 50px;
+      font-size: 14px;
+      font-weight: 600;
+
+      &:nth-of-type(1) {
+        left: 214px;
+        z-index: 51;
+      }
+
+      &:nth-of-type(2) {
+        left: 310px;
+        z-index: 52;
+      }
+
+      &:nth-of-type(3) {
+        left: 406px;
+        z-index: 53;
+      }
+
+      &:nth-of-type(4) {
+        left: 476px;
+        z-index: 54;
+      }
+
+      &:nth-of-type(5) {
+        left: 566px;
+        z-index: 55;
+        color: #555555;
+      }
+    }
+
+    svg {
+      width: 132px;
+      height: 32px;
+      top: 24%;
+      
+      &:nth-of-type(1) {
+        left: 180px;
+        z-index: 10;
+      }
+
+      &:nth-of-type(2) {
+        left: 264px;
+        z-index: 9;
+      }
+
+      &:nth-of-type(3) {
+        left: 348px;
+        z-index: 8;
+      }
+
+      &:nth-of-type(4) {
+        left: 432px;
+        z-index: 7;
+      }
+
+      &:nth-of-type(5) {
+        left: 516px;
+        z-index: 6;
+      }
+    }
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+
+    ul {
+      &:nth-of-type(1){
+        margin-right: 120px;
+      }
+      &:nth-of-type(2){
+        width: 360px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+}
+
+
+  #header3 {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: rgb(174, 217, 255);
+
+    img {
+      width: 186px;
+      height: 66px;
+    }
+  }
+
+  #header4 {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    background-color: rgb(141, 194, 240);   
+  }
+
+  // 슬라이더
+  #slider {
+    width: 1200px;
+    height: 380px;
+    margin: 0 auto;
+  }
+
+  // 리스트
+  #list {
+    width: 1200px;
+    height: 96px;
+    margin: 0 auto; 
+  }
+
+  // 오늘의 선택
+  #today {
+    width: 1200px;
+    height: 314px;
+    margin: 0 auto;
+  }
+
+  // 광고-1
+  #AD_1 {
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      border-radius: 16px;
+      
+    }
+  }
+
+  // 한강 신작
+  #new {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+  }
+
+  // 출판사에서 자신있게 추천해요
+  #kyobo_pick {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+  }
+
+  // MD들이 신중하게 골랐어요
+  #MD_pick {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+  }
+
+  // AD-2
+  #AD_2 {
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      border-radius: 16px;
+      
+    }
+  }
+
+  // AI 추천 Picks
+  #AI_pick {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+  }
+
+  // best
+  #best {
+    width: 1200px;
+    height: 908px;
+    margin: 0 auto;   
+  }
+
+  // 사람들이 많이 찾고 있어요
+  #find {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+  }
+
+  // 교보문고에서만 만날 수 있어요
+  #kyobo_only {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+  }
+
+  // AD-3
+  #AD_3 {
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+
+    img {
+      border-radius: 16px;
+    }
+  }
+
+  // 교보문고가 만들었어요
+  #kyobo_made {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+  }
+
+  // 바로출판 POD
+  #POD {
+    width: 1200px;
+    height: 378px;
+    margin: 0 auto;
+  }
+
+  // 이벤트의 정성이 달라요
+  #event {
+    width: 1200px;
+    height: 224px;
+    margin: 0 auto; 
+  }
+
+  // 푸터
+  #footer {
+    width: 1200px;
+    height: 292px;
+    margin: 0 auto;
+    border-top: 1px solid #dfdfdf;
+    padding: 40px 0;
+
+    ul {
+      width: 800px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    
+      li {
+        a {
+          color: #595959;
+          font-size: 14px;
+          text-decoration: none;
+    
+          &.bb {
+            text-decoration: underline;
+            color: #121212;
+          }
+        }
+    
+        &.bb a {
+          text-decoration: underline;
+          color: #121212;
+        }
+      }
+    }
+      p {
+      color: #595959;
+      font-size: 12px;
+
+      &:nth-of-type(1) {
+        margin-bottom: 10px;
+      }
+      &:nth-of-type(2) {
+        margin-bottom: 60px;
+      }
+      span {
+        color: #595959;
+        font-weight: bold;
+      }
+    }
+
+  }
