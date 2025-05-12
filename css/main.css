@@ -14,9 +14,10 @@ a {
 }
 
 #category_wrap {
-  width: 100vw;
+  width: 100%;
   height: 38px;
   background-color: #097cff;
+  margin: 0 auto;
 }
 #category_wrap #h_category {
   width: 1200px;
@@ -51,7 +52,7 @@ a {
 }
 
 #search_wrap {
-  width: 100vw;
+  width: 100%;
   height: 112px;
   margin: 0 auto;
   border-bottom: 1px solid #e2e2e2;
@@ -91,49 +92,106 @@ a {
 }
 #search_wrap .h_search #h_AD {
   width: 180px;
-  height: 112px;
+  height: 110px;
   margin-left: 50px;
 }
 #search_wrap .h_search #h_AD img {
   width: 100%;
-  height: 112px;
+  height: 110px;
 }
 
 #find_wrap {
   width: 100vw;
   height: 44px;
   border-bottom: 3px solid #007aff;
+  display: flex;
+  line-height: 38px;
+  align-items: center;
 }
 #find_wrap .h_find {
   width: 1200px;
   margin: 0 auto;
   display: flex;
 }
-#find_wrap .h_find span {
+#find_wrap .h_find .R_find {
+  display: flex;
+  font-weight: 500;
+  width: 800px;
+}
+#find_wrap .h_find .R_find em {
+  margin: 16px 10px 0 10px;
+  float: left;
+  width: 1px;
+  height: 10px;
+  border-right: solid 1px #ccc;
+}
+#find_wrap .h_find .R_find .list_1 {
   width: 110px;
   height: 43px;
   background-color: #0080ff;
   font-size: 13px;
-  line-height: 40px;
+  line-height: 42px;
   text-align: center;
   color: #fff;
 }
-#find_wrap .h_find .R_find {
-  display: flex;
-  align-items: center;
-}
-#find_wrap .h_find .R_find .list_1 li {
+#find_wrap .h_find .R_find .list_1 .list_sub1 {
   display: none;
+  position: absolute;
+  border: 3px solid #007aff;
+  width: 110px;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 li {
+  position: relative;
+  padding-left: 16px;
+  text-align: left;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 li:hover {
+  background-color: #0080ff;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 li:hover a {
+  color: #fff;
 }
 #find_wrap .h_find .R_find .list_2 {
+  width: 240px;
   display: flex;
+  justify-content: space-between;
+  line-height: 38px;
+  margin-left: 14px;
+}
+#find_wrap .h_find .R_find .list_2 a {
+  color: #0080ff;
 }
 #find_wrap .h_find .R_find .list_3 {
+  width: 260px;
   display: flex;
+  justify-content: space-between;
 }
-#find_wrap .list_4 {
+#find_wrap .h_find .list_4 {
+  width: 460px;
   display: flex;
+  justify-content: space-between;
+}
+#find_wrap .h_find .list_4 a {
+  color: #666;
+}
+#find_wrap .h_find .list_4 li:first-child a {
+  color: rgb(102, 190, 255);
 }
 #find_wrap a {
   font-size: 13px;
+  white-space: nowrap;
+}
+
+.catewrap .ct a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ct_sub {
+  font-size: 12px;
+  color: #666;
+  display: none;
+}
+.ct_sub a:hover {
+  text-decoration: underline;
 }

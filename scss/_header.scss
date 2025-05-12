@@ -1,23 +1,11 @@
 @charset "utf-8";
 
-$fontcolor : #121212;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-ul, li, ol {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: $fontcolor
-}
 #category_wrap {
-  width: 100vw;
+  width: 100%;
   height: 38px;
   background-color: #097cff;
+  margin: 0 auto;
   
 
   #h_category {
@@ -58,7 +46,7 @@ a {
 
 // 검색창 보더 컬러 
 #search_wrap  {
-  width: 100vw;
+  width: 100%;
   height: 112px;
   margin: 0 auto;
   border-bottom: 1px solid #e2e2e2;
@@ -103,11 +91,11 @@ a {
 
     #h_AD {
       width: 180px;
-      height: 112px;
+      height: 110px;
       margin-left: 50px;
       img {
         width: 100%;
-        height: 112px;
+        height: 110px;
       }
     }
   }
@@ -117,46 +105,95 @@ a {
   width: 100vw;
   height: 44px;
   border-bottom: 3px solid #007aff;
+  display: flex;
+  line-height: 38px;
+  align-items: center;
 
   .h_find {
     width: 1200px;
     margin: 0 auto;
     display: flex;
-
-    span {
-      width: 110px;
-      height: 43px;
-      background-color: #0080ff;
-      font-size: 13px;
-      line-height: 40px;
-      text-align: center;
-      color: #fff;
-    }
+    
+    
       .R_find {
         display: flex;
-        align-items: center;
-        
+        font-weight: 500;
+        width: 800px;
 
+        em {
+          margin: 16px 10px 0 10px;
+          float: left;
+          width: 1px;
+          height: 10px;
+          border-right: solid 1px #ccc;
+        }
+        
         .list_1 {
-        li {
+          width: 110px;
+          height: 43px;
+          background-color: #0080ff;
+          font-size: 13px;
+          line-height: 42px;
+          text-align: center;
+          color: #fff;
+
+        .list_sub1 {
           display: none;
+          position: absolute;
+          border: 3px solid #007aff;
+          width: 110px;
+          // margin-top: 10px;
+
+          li {
+            position: relative;
+            padding-left: 16px;
+            text-align: left;
+          }
+          li:hover{
+            background-color: #0080ff;
+          }
+          li:hover a {
+            color: #fff;
+          }
         }
       }
       
       .list_2 {
+        width: 240px;
         display: flex;
+        justify-content: space-between;
+        line-height: 38px;
+        margin-left: 14px;
+        
+        a {
+          color: #0080ff;
+        }
       }
 
       .list_3 {
+        width: 260px;
         display: flex;
+        justify-content: space-between;
       }
     }
+    .list_4 {
+      width: 460px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        color: #666;
+      }
+
+      li:first-child a {
+        color: rgb(102, 190, 255);
+      }
   }
-  .list_4 {
-    display: flex;
   }
+
 
   a {
     font-size: 13px;
+    white-space: nowrap;
   }
 }
