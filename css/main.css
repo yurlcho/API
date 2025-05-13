@@ -126,7 +126,7 @@ a {
   border-right: solid 1px #ccc;
 }
 #find_wrap .h_find .R_find .list_1 {
-  width: 110px;
+  width: 113px;
   height: 43px;
   background-color: #0080ff;
   font-size: 13px;
@@ -138,12 +138,17 @@ a {
   display: none;
   position: absolute;
   border: 3px solid #007aff;
-  width: 110px;
+  width: 113px;
 }
 #find_wrap .h_find .R_find .list_1 .list_sub1 li {
   position: relative;
   padding-left: 16px;
   text-align: left;
+  background-color: #fff;
+  z-index: 20;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 li a {
+  color: #555;
 }
 #find_wrap .h_find .R_find .list_1 .list_sub1 li:hover {
   background-color: #0080ff;
@@ -182,16 +187,59 @@ a {
   white-space: nowrap;
 }
 
-.catewrap .ct a {
+.cate_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  height: 423px;
+  border: 1px solid #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.cate_wrap .ct {
+  display: flex;
+}
+.cate_wrap .ct > a {
+  padding-left: 14px;
+  width: 110px;
+  text-align: left;
   font-size: 14px;
   font-weight: bold;
 }
+.cate_wrap .ct:first-of-type .ct_sub {
+  display: flex;
+  padding: 0;
+  border-right: none;
+  width: 1090px;
+}
 
 .ct_sub {
+  display: flex;
+  flex-direction: column;
+  width: 129px;
+  height: 422px;
+  border-left: 1px solid #666;
+  border-right: 1px solid #666;
+  position: absolute;
+  left: 110px;
+  top: 0;
+  display: none;
+  padding: 0 0 0 10px;
+  font-size: 12px;
+}
+.ct_sub img {
+  margin-left: 118px;
+}
+.ct_sub em {
+  margin: 0 1px;
+  color: #ccc;
+  font-style: normal;
+}
+.ct_sub li a {
   font-size: 12px;
   color: #666;
-  display: none;
 }
-.ct_sub a:hover {
+.ct_sub li:hover a {
   text-decoration: underline;
 }

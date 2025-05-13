@@ -129,7 +129,7 @@
         }
         
         .list_1 {
-          width: 110px;
+          width: 113px;
           height: 43px;
           background-color: #0080ff;
           font-size: 13px;
@@ -141,13 +141,18 @@
           display: none;
           position: absolute;
           border: 3px solid #007aff;
-          width: 110px;
-          // margin-top: 10px;
+          width: 113px;
 
           li {
             position: relative;
             padding-left: 16px;
             text-align: left;
+            background-color: #fff;
+            z-index: 20;
+            a {
+              color: #555;
+            }
+
           }
           li:hover{
             background-color: #0080ff;
