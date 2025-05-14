@@ -14,3 +14,11 @@ $(function(){
     $('.ct_sub').stop();
     });
 });
+$(function(){
+    $('.cate_wrap>li').hover(function(){
+    $('.ct_sub2').stop().hide();
+    $(this).find('.ct_sub2').stop().show();
+},function(){
+    $('.ct_sub2').stop();
+    });
+});

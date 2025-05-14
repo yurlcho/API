@@ -4,7 +4,7 @@
   width: 1200px;
   margin: 0 auto;
   height: 423px;
-  border: 1px solid #666;
+  border: 1px solid #d8d8d8;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -26,6 +26,7 @@
     padding: 0;
     border-right: none;
     width: 1090px;
+    background-color: #c8e6ff;
   }
 }
 
@@ -34,13 +35,13 @@
   flex-direction: column;
   width: 129px;
   height: 422px;
-  border-left: 1px solid #666;
-  border-right: 1px solid #666;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
   position: absolute;
   left: 110px;
   top: 0;
   display: none;
-  padding: 0 0 0 10px;
+  padding: 10px 0 0 10px;
   font-size: 12px;
 
   img {
@@ -52,12 +53,18 @@
     color: #ccc;
     font-style: normal;
   }
-  li a {
+  a {
     font-size: 12px;
     color: #666;
   }
-  li:hover a {
+  a:hover {
     text-decoration: underline;
   }
-
 }
+
+  .ct_sub2 {
+      position: absolute;
+      left: 239px;
+      top: 0;
+      display: none;
+  }

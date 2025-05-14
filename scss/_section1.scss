@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+.sc1_wrap {
+    display: flex;
+    width: 1200px;
+    height: 400px;
+    margin: 40px auto;
+    background-color: #ccdde6;
+
+    .Lef {
+        border: 1px solid #d8d8d8;
+
+        .Lef_1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 238px;
+            height: 268px;
+            background-color: white;
+            position: relative;
+            border-bottom: 1px solid #d8d8d8;
+
+            h2 {
+                align-self: flex-start;
+                margin: 16px 0 0 21px;
+                font-size: 16px;
+            }
+
+            .Lef_slider {
+                display: flex;
+                flex-direction: column;
+
+                img {
+                    width: 200px;
+                    height: 153px;
+                }
+                p {
+                    margin-top: 6px;
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+                .Lef_sliderSub {
+                    margin-top: 12px;
+                }
+                .Lef_sliderSub:not(:first-of-type) {
+                    display: none;
+                }
+
+            span {
+                position: absolute;
+                display: block;
+                top: 40%;
+                border-radius: 2px;
+                color: #121212;
+                cursor: pointer;
+            }
+            .prev {
+                left: 0;
+                padding: 5px 5px 5px 6px;
+            }
+            .next {
+                right: 0;
+                padding: 5px 5px 5px 5px;
+            }
+         }
+    }
+        .Lef_2 {
+            width: 238px;
+            height: 120px;
+            background-color: #fff;
+
+            img {
+                margin: 8px 0 10px 25px;
+                width: 188px;
+                height: 99px;
+            }
+        }
+    }
+
+    .Cen {
+        width: 720px;
+        height: 389px;
+        // background-color: antiquewhite;
+    }
+
+    .Rig {
+        width: 240px;
+        height: 389px;
+        border: 1px solid #d8d8d8;
+        background-color: #fff;
+
+        .Rig_p {
+            display: flex;
+            justify-content: space-evenly;
+            p {
+                width: 120px;
+                font-size: 13px;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #d8d8d8;
+                
+            }
+        }
+
+        select {
+            width: 200px;
+            margin-left: 18px;
+        }
+
+        .rankwrap {
+            em {
+                font-size: 12px;
+                font-style: normal;
+                color: #cecece
+            }
+            a {
+                font-size: 12px;
+            }
+        }
+
+        .rank_book {
+            display: flex;
+            flex-direction: column;
+
+            .rank_bookSub {
+                display: flex;
+            }
+            .num {
+                width: 12px;
+                height: 12px;
+                font-size: 12px;
+                text-align: center;
+                background-color: #4383d6;
+                color: #fff;
+            }
+        .book_img {
+            width: 60px;
+            height: 60px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    }
+    }
+}
