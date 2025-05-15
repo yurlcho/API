@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+.sc2_wrap {
+    width: 1200px;
+    height: 385px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d8d8d8;
+
+    .sc2_Lef {
+        position: relative;
+
+        span:hover {
+           cursor: pointer; 
+        }
+            .prev2 {
+                position: absolute;
+                top: 168px;
+                left: 0;
+                padding: 5px 8px 5px 6px;
+                background-color: #696969;
+                color: #fff;
+            }
+
+            .next2 {
+                position: absolute;
+                top: 168px;
+                right: 0;
+                padding: 5px 5px 5px 5px;
+                background-color: #696969;
+                color: #fff;
+            }
+        
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 40px 0 -20px 60px;
+        }
+
+
+        .thisbook_wrap {
+            display: flex;
+
+            .thisbook {
+                width: 959px;
+                height: 383px;
+                display: flex;
+                align-items: center;
+
+                .box {
+                    width: 260px;
+                    height: 300px;
+                    border-radius: 4px;
+                    white-space: nowrap;
+                    text-align: center;
+
+                    img {
+                        width: 130px;
+                        height: auto;
+                    }
+                    img:hover {
+                        opacity: 0.5;
+                    }
+
+                    h3 {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+
+                    h4 {
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+
+                    h5 {
+                        font-size: 12px;
+                        color: #a8a8a8;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .thisbook:not(:nth-of-type(1)) {
+                display: none;
+            }
+        }
+    }
+
+    .AD_2 {
+        width: 238px;
+        height: 383px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ecf5fe;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            align-self: flex-start;
+            margin: 26px 0 0 40px;
+        }
+
+        .AD_2sub {
+            width: 208px;
+            height: 174px;
+            padding: 30px 30px 30px;
+
+            &:nth-of-type(1) {
+                border-bottom: 1px solid #c9d9ea;
+            }
+
+            img {
+                width: 158px;
+                height: 100px;
+            }
+        }
+    }
+}

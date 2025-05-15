@@ -1,3 +1,4 @@
+// 그래제본소
 function prev() {
   $('.Lef_sliderSub:last').prependTo('.Lef_slider');
   $('.Lef_sliderSub').hide();
@@ -10,5 +11,6 @@ function next() {
   $('.Lef_sliderSub:first').show();
 }
 
-$('.prev').on('click', prev);
-$('.next').on('click', next);
+$('.prev1').on('click', prev);
+$('.next1').on('click', next);
+

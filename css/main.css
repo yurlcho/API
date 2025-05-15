@@ -255,6 +255,7 @@ a {
 
 .sc1_wrap {
   display: flex;
+  align-items: center;
   width: 1200px;
   height: 400px;
   margin: 40px auto;
@@ -305,11 +306,11 @@ a {
   color: #121212;
   cursor: pointer;
 }
-.sc1_wrap .Lef .Lef_1 .Lef_slider .prev {
+.sc1_wrap .Lef .Lef_1 .Lef_slider .prev1 {
   left: 0;
   padding: 5px 5px 5px 6px;
 }
-.sc1_wrap .Lef .Lef_1 .Lef_slider .next {
+.sc1_wrap .Lef .Lef_1 .Lef_slider .next1 {
   right: 0;
   padding: 5px 5px 5px 5px;
 }
@@ -342,10 +343,17 @@ a {
   font-size: 13px;
   text-align: center;
   padding: 10px;
-  border: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+.sc1_wrap .Rig .Rig_p p:nth-of-type(1) {
+  border-right: 1px solid #d8d8d8;
 }
 .sc1_wrap .Rig select {
   width: 200px;
+  margin: 10px 0 0 18px;
+}
+.sc1_wrap .Rig .rankwrap {
+  width: 240px;
   margin-left: 18px;
 }
 .sc1_wrap .Rig .rankwrap em {
@@ -362,18 +370,32 @@ a {
 }
 .sc1_wrap .Rig .rank_book .rank_bookSub {
   display: flex;
+  align-items: center;
+  margin-top: 16px;
 }
-.sc1_wrap .Rig .rank_book .num {
-  width: 12px;
-  height: 12px;
+.sc1_wrap .Rig .rank_book .rank_bookSub p {
+  margin-left: 6px;
+}
+.sc1_wrap .Rig .rank_book .rank_bookSub p:nth-of-type(1) {
+  font-size: 14px;
+}
+.sc1_wrap .Rig .rank_book .rank_bookSub p:nth-of-type(2) {
   font-size: 12px;
+  color: #666;
+}
+.sc1_wrap .Rig .rank_book span {
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
   text-align: center;
   background-color: #4383d6;
   color: #fff;
+  line-height: 14px;
 }
 .sc1_wrap .Rig .rank_book .book_img {
-  width: 60px;
-  height: 60px;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
 }
 .sc1_wrap .Rig .rank_book .book_img img {
   width: 100%;
@@ -382,4 +404,202 @@ a {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.sc2_wrap {
+  width: 1200px;
+  height: 385px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d8d8d8;
+}
+.sc2_wrap .sc2_Lef {
+  position: relative;
+}
+.sc2_wrap .sc2_Lef span:hover {
+  cursor: pointer;
+}
+.sc2_wrap .sc2_Lef .prev2 {
+  position: absolute;
+  top: 168px;
+  left: 0;
+  padding: 5px 8px 5px 6px;
+  background-color: #696969;
+  color: #fff;
+}
+.sc2_wrap .sc2_Lef .next2 {
+  position: absolute;
+  top: 168px;
+  right: 0;
+  padding: 5px 5px 5px 5px;
+  background-color: #696969;
+  color: #fff;
+}
+.sc2_wrap .sc2_Lef h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 40px 0 -20px 60px;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap {
+  display: flex;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap .thisbook {
+  width: 959px;
+  height: 383px;
+  display: flex;
+  align-items: center;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap .thisbook .box {
+  width: 260px;
+  height: 300px;
+  border-radius: 4px;
+  white-space: nowrap;
+  text-align: center;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap .thisbook .box img {
+  width: 130px;
+  height: auto;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap .thisbook .box img:hover {
+  opacity: 0.5;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap .thisbook .box h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap .thisbook .box h4 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap .thisbook .box h5 {
+  font-size: 12px;
+  color: #a8a8a8;
+  font-weight: 400;
+}
+.sc2_wrap .sc2_Lef .thisbook_wrap .thisbook:not(:nth-of-type(1)) {
+  display: none;
+}
+.sc2_wrap .AD_2 {
+  width: 238px;
+  height: 383px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ecf5fe;
+}
+.sc2_wrap .AD_2 h2 {
+  font-size: 16px;
+  font-weight: 500;
+  align-self: flex-start;
+  margin: 26px 0 0 40px;
+}
+.sc2_wrap .AD_2 .AD_2sub {
+  width: 208px;
+  height: 174px;
+  padding: 30px 30px 30px;
+}
+.sc2_wrap .AD_2 .AD_2sub:nth-of-type(1) {
+  border-bottom: 1px solid #c9d9ea;
+}
+.sc2_wrap .AD_2 .AD_2sub img {
+  width: 158px;
+  height: 100px;
+}
+
+.sc3_wrap {
+  width: 1200px;
+  height: 369px;
+  margin: 40px auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d8d8d8;
+}
+.sc3_wrap .sc3_Lef {
+  position: relative;
+}
+.sc3_wrap .sc3_Lef span:hover {
+  cursor: pointer;
+}
+.sc3_wrap .sc3_Lef .prev3 {
+  position: absolute;
+  top: 168px;
+  left: 0;
+  padding: 5px 8px 5px 6px;
+  background-color: #696969;
+  color: #fff;
+}
+.sc3_wrap .sc3_Lef .next3 {
+  position: absolute;
+  top: 168px;
+  right: 0;
+  padding: 5px 5px 5px 5px;
+  background-color: #696969;
+  color: #fff;
+}
+.sc3_wrap .sc3_Lef h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 40px 0 -20px 60px;
+}
+.sc3_wrap .sc3_Lef .cblue {
+  color: #0080ff;
+}
+.sc3_wrap .thisbook_wrap2 {
+  display: flex;
+}
+.sc3_wrap .thisbook_wrap2 .thisbook2 {
+  width: 959px;
+  height: 367px;
+  display: flex;
+  align-items: center;
+}
+.sc3_wrap .thisbook_wrap2 .thisbook2 .box {
+  width: 260px;
+  height: 302px;
+  border-radius: 4px;
+  white-space: nowrap;
+  text-align: center;
+}
+.sc3_wrap .thisbook_wrap2 .thisbook2 .box img {
+  width: 130px;
+  height: auto;
+}
+.sc3_wrap .thisbook_wrap2 .thisbook2 .box img:hover {
+  opacity: 0.5;
+}
+.sc3_wrap .thisbook_wrap2 .thisbook2 .box h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.sc3_wrap .thisbook_wrap2 .thisbook2 .box h4 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.sc3_wrap .thisbook_wrap2 .thisbook2 .box h5 {
+  font-size: 12px;
+  color: #a8a8a8;
+  font-weight: 400;
+}
+.sc3_wrap .thisbook_wrap2 .thisbook2:not(:nth-of-type(1)) {
+  display: none;
+}
+.sc3_wrap .AD_3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sc3_wrap .AD_3 .AD_3sub {
+  width: 238px;
+  height: 369px;
+}
+.sc3_wrap .AD_3 .AD_3sub img {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5px;
+}
+.sc3_wrap .AD_3 .AD_3sub:not(:nth-of-type(1)) {
+  display: none;
 }

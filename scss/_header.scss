@@ -6,7 +6,7 @@
   height: 38px;
   background-color: #097cff;
   margin: 0 auto;
-  
+
 
   #h_category {
     width: 1200px;
@@ -29,14 +29,17 @@
       display: flex;
       justify-content: space-between;
     }
+
     #R {
       display: flex;
     }
+
     .cate_R {
       width: 260px;
       display: flex;
       justify-content: space-between;
     }
+
     .glo {
       margin-left: 16px;
     }
@@ -45,32 +48,32 @@
 }
 
 // 검색창 보더 컬러 
-#search_wrap  {
+#search_wrap {
   width: 100%;
   height: 112px;
   margin: 0 auto;
   border-bottom: 1px solid #e2e2e2;
   line-height: 50%;
-  
-    .h_search {
-      width: 1200px;
+
+  .h_search {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .h_search2 {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin: 0 auto;
 
-      .h_search2 {
-        display: flex;
-        align-items: center;
-
-        fieldset {
+      fieldset {
         width: 520px;
         height: 52px;
         border: 2px solid #007aff;
         border-radius: 4px;
         margin-left: 50px;
-        
-        
+
+
         input {
           width: 430px;
           height: 48px;
@@ -78,6 +81,7 @@
           margin-left: 18px;
           // background-color: #e2e2e2;
         }
+
         button {
           width: 60px;
           height: 48px;
@@ -93,6 +97,7 @@
       width: 180px;
       height: 110px;
       margin-left: 50px;
+
       img {
         width: 100%;
         height: 110px;
@@ -114,29 +119,29 @@
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    
-    
-      .R_find {
-        display: flex;
-        font-weight: 500;
-        width: 800px;
 
-        em {
-          margin: 16px 10px 0 10px;
-          float: left;
-          width: 1px;
-          height: 10px;
-          border-right: solid 1px #ccc;
-        }
-        
-        .list_1 {
-          width: 113px;
-          height: 43px;
-          background-color: #0080ff;
-          font-size: 13px;
-          line-height: 42px;
-          text-align: center;
-          color: #fff;
+
+    .R_find {
+      display: flex;
+      font-weight: 500;
+      width: 800px;
+
+      em {
+        margin: 16px 10px 0 10px;
+        float: left;
+        width: 1px;
+        height: 10px;
+        border-right: solid 1px #ccc;
+      }
+
+      .list_1 {
+        width: 113px;
+        height: 43px;
+        background-color: #0080ff;
+        font-size: 13px;
+        line-height: 42px;
+        text-align: center;
+        color: #fff;
 
         .list_sub1 {
           display: none;
@@ -150,27 +155,30 @@
             text-align: left;
             background-color: #fff;
             z-index: 20;
+
             a {
               color: #555;
             }
 
           }
-          li:hover{
+
+          li:hover {
             background-color: #0080ff;
           }
+
           li:hover a {
             color: #fff;
           }
         }
       }
-      
+
       .list_2 {
         width: 240px;
         display: flex;
         justify-content: space-between;
         line-height: 38px;
         margin-left: 14px;
-        
+
         a {
           color: #0080ff;
         }
@@ -182,6 +190,7 @@
         justify-content: space-between;
       }
     }
+
     .list_4 {
       width: 460px;
       display: flex;
@@ -194,7 +203,7 @@
       li:first-child a {
         color: rgb(102, 190, 255);
       }
-  }
+    }
   }
 
 
