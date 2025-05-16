@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+.mov_wrap {
+    width: 1200px;
+    height: 500px;
+    margin: 40px auto;
+    border: 1px solid #d8d8d8;
+
+    >div {
+        margin: 40px 0 -20px 60px;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+
+        }
+    }
+
+    .mov_mid {
+        display: flex;
+        width: 500px;
+        ;
+
+        .mov {
+            h3 {
+                font-size: 15px;
+                font-weight: 500;
+                margin-top: 6px
+            }
+        }
+
+        .with {
+            margin-left: 20px;
+
+            .movlist {
+                width: 420px;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 136px;
+                    height: 76px;
+                }
+            }
+
+            .box {
+                
+                h3 {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                h4 {
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+                h5 {
+                    font-size: 12px;
+                    color: #a8a8a8;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

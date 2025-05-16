@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+.pick_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    border-right: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+
+    .pick_click {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            text-align: center;
+            width: 172px;
+            height: 68px;
+            
+
+            p {
+                font-size: 12px;
+                color: #333;
+            }
+        }
+        div:nth-of-type(1){
+            border-top: 1px solid #d8d8d8;
+        }
+        div:not(:nth-of-type(1)) {
+            background-color: #eeeeee;
+            border: 1px solid #d8d8d8;
+        }
+
+        .read_b em.icon {
+            background-position: 0 -200px;
+        }
+
+        .used_b em.icon {
+            background-position: -400px -200px;
+        }
+
+        .eBook_b em.icon {
+            background-position: -50px -200px;
+        }
+
+        .CDLP_b em.icon {
+            background-position: -150px -200px;
+        }
+
+        .DVDBD_b em.icon {
+            background-position: -200px -200px;
+        }
+
+        .GIFT_b em.icon {
+            background-position: -350px -200px;
+        }
+
+        .ticket_b em.icon {
+            background-position: -300px -200px;
+        }
+
+        .icon {
+            display: block;
+            margin: 0 auto;
+            width: 50px;
+            height: 40px;
+            overflow: hidden;
+            text-indent: -999em;
+            background: url(/API/img/welcome_multi_n.png) no-repeat 0 -200px;
+
+        }
+    }
+
+    // 상단 탭 끝
+
+
+    // 슬라이더 시작
+    .pickname {
+        height: 20px;
+        margin: 40px 0 10px 60px;
+
+        .pickh2 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+
+    .read {
+        position: relative;
+
+        .read_slider {
+            display: flex;
+            justify-content: center;
+            height: 370px;
+            padding-top: 20px;
+            border-bottom: 1px solid #d8d8d8;
+        }
+
+        .read_slider_sub {
+            display: flex;
+        }
+
+        .read_slider_sub:not(:nth-of-type(1)) {
+            display: none;
+        }
+
+        .box {
+            width: 360px;
+            height: 302px;
+            border-radius: 4px;
+            white-space: nowrap;
+            text-align: center;
+
+
+            img {
+                width: 160px;
+                height: auto;
+                border-radius: 6px;
+            }
+
+            img:hover {
+                opacity: 0.5;
+            }
+
+            h3 {
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            h4 {
+                font-size: 13px;
+                font-weight: 500;
+            }
+
+            h5 {
+                font-size: 12px;
+                color: #a8a8a8;
+                font-weight: 400;
+            }
+        }
+
+        span:hover {
+            cursor: pointer;
+        }
+
+        .prev4 {
+            position: absolute;
+            top: 126px;
+            left: 0;
+            padding: 8px 12px 8px 10px;
+            background-color: #696969;
+            color: #fff;
+        }
+
+        .next4 {
+            position: absolute;
+            top: 126px;
+            right: 0;
+            padding: 8px 10px 8px 12px;
+            background-color: #696969;
+            color: #fff;
+        }
+
+        .read_sub {
+            height: 198px;
+            border-bottom: 1px solid #d8d8d8;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .textbox {
+                width: 343px;
+                h3 {
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 13px;
+                    color: #999;
+                }
+            }
+            .read_bookbox {
+                width: 560px;
+                display: flex;
+                justify-content: space-around;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                img {
+                    width: 83px;
+                    height: 120px;
+                    border: 1px solid #d8d8d8
+                }
+                h4 {
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

@@ -13,26 +13,27 @@
         position: relative;
 
         span:hover {
-           cursor: pointer; 
+            cursor: pointer;
         }
-            .prev2 {
-                position: absolute;
-                top: 168px;
-                left: 0;
-                padding: 5px 8px 5px 6px;
-                background-color: #696969;
-                color: #fff;
-            }
 
-            .next2 {
-                position: absolute;
-                top: 168px;
-                right: 0;
-                padding: 5px 5px 5px 5px;
-                background-color: #696969;
-                color: #fff;
-            }
-        
+        .prev2 {
+            position: absolute;
+            top: 168px;
+            left: 0;
+            padding: 5px 8px 5px 6px;
+            background-color: #696969;
+            color: #fff;
+        }
+
+        .next2 {
+            position: absolute;
+            top: 168px;
+            right: 0;
+            padding: 5px 5px 5px 5px;
+            background-color: #696969;
+            color: #fff;
+        }
+
         h2 {
             font-size: 16px;
             font-weight: 500;
@@ -60,6 +61,7 @@
                         width: 130px;
                         height: auto;
                     }
+
                     img:hover {
                         opacity: 0.5;
                     }
@@ -117,5 +119,25 @@
                 height: 100px;
             }
         }
+    }
+}
+
+.banner {
+    width: 1200px;
+    height: 200px;
+    margin-top: 40px;
+    position: relative;
+
+
+    .banner1 {
+        width: 100%;
+        position: absolute;
+        z-index: 12;
+    }
+
+    .banner2 {
+        position: absolute;
+        z-index: 13;
+        left: 25%;
     }
 }
