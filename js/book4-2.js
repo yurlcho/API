@@ -2,7 +2,7 @@ async function fetchBooks(query) {
     const params = new URLSearchParams({
         target: "name",
         query,
-        size: 50
+        size: 10
     });
     const url = `https://dapi.kakao.com/v3/search/book?${params}`;
 
@@ -22,7 +22,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['고래'];
+        const querys = ['미 비포 유'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
@@ -33,17 +33,17 @@ async function bookData() {
             })
 
             for (let j = 0; j < 1; j++) {
-                $('.with_book').eq(i).prepend('<div class="box"></div>');
-                const div = $('.with_book').eq(i).find('.box').last();
+                $('.with_book3').eq(i).prepend('<div class="box"></div>');
+                const div = $('.with_book3').eq(i).find('.box').last();
 
-                div.append("<img src=" + book[j].thumbnail + "/>");
+                div.append("<img src=https://image.yes24.com/Goods/126159296/L" + book[j] + "/>");
             }
 
             for (let k = 0; k < 1; k++) {
-                $('.with_book_text').eq(i).append('<div class="textbox"></div>');
-                const div = $('.with_book_text').eq(i).find('.textbox').last();
+                $('.with_book_text3').eq(i).append('<div class="textbox"></div>');
+                const div = $('.with_book_text3').eq(i).find('.textbox').last();
 
-                div.append("<h6>" + "마치 팀 버튼이 <토지>를 쓴 것 같다" + "</h6>")
+                div.append("<h6>" + "세상의 모든 사랑 이야기가 돌아갈 단 하나의 종착지" + "</h6>")
                 div.append("<h4>" + book[k].title + "</h4>");
                 div.append("<h5>" + book[k].authors + "</h5>");
                 div.append("<h5>| " + book[k].publisher + "</h5>");

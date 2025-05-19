@@ -22,7 +22,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['고래'];
+        const querys = ['사랑의 기술'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
@@ -33,17 +33,17 @@ async function bookData() {
             })
 
             for (let j = 0; j < 1; j++) {
-                $('.with_book').eq(i).prepend('<div class="box"></div>');
-                const div = $('.with_book').eq(i).find('.box').last();
+                $('.with_book2').eq(i).prepend('<div class="box"></div>');
+                const div = $('.with_book2').eq(i).find('.box').last();
 
                 div.append("<img src=" + book[j].thumbnail + "/>");
             }
 
             for (let k = 0; k < 1; k++) {
-                $('.with_book_text').eq(i).append('<div class="textbox"></div>');
-                const div = $('.with_book_text').eq(i).find('.textbox').last();
+                $('.with_book_text2').eq(i).append('<div class="textbox"></div>');
+                const div = $('.with_book_text2').eq(i).find('.textbox').last();
 
-                div.append("<h6>" + "마치 팀 버튼이 <토지>를 쓴 것 같다" + "</h6>")
+                div.append("<h6>" + "사랑에 성공하기 위해서 무엇이 필요한가" + "</h6>")
                 div.append("<h4>" + book[k].title + "</h4>");
                 div.append("<h5>" + book[k].authors + "</h5>");
                 div.append("<h5>| " + book[k].publisher + "</h5>");

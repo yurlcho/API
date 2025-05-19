@@ -6,7 +6,6 @@
     width: 1200px;
     height: 400px;
     margin: 40px auto;
-    background-color: #ccdde6;
 
     .Lef {
         border: 1px solid #d8d8d8;
@@ -23,8 +22,9 @@
 
             h2 {
                 align-self: flex-start;
-                margin: 16px 0 0 21px;
+                margin: 20px 0 0 21px;
                 font-size: 16px;
+                font-weight: 500;
             }
 
             .Lef_slider {
@@ -85,9 +85,102 @@
     }
 
     .Cen {
-        width: 720px;
-        height: 389px;
-        // background-color: antiquewhite;
+        width: 790px;
+        height: 390px;
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        position: relative;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 20px 0 26px 40px;
+        }
+
+
+        .Cen_bookwrap {
+            display: flex;
+            position: relative;
+
+            .Cen_book {
+                position: absolute;
+                width: 560px;
+                display: flex;
+                margin: 0 auto;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+        }
+
+        .Cen_book:not(:nth-of-type(1)) {
+            display: none;
+        }
+
+        .box {
+            img {
+                width: 190px;
+                height: 280px;
+                border: 1px solid #d8d8d8;
+            }
+        }
+
+        .textbox {
+            margin-left: 20px;
+
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 10px;
+            }
+
+            h4 {
+                font-size: 15px;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+
+            h5 {
+                font-size: 12px;
+                color: #a8a8a8;
+                font-weight: 400;
+            }
+
+            h6 {
+                font-size: 16px;
+                color: #6699cc;
+                font-weight: 500;
+            }
+
+            p {
+                margin-top: 16px;
+                font-size: 13px;
+                color: #a8a8a8;
+            }
+
+        }
+
+        .prev7 {
+            position: absolute;
+            top: 48%;
+            left: 0;
+            padding: 8px 12px 8px 10px;
+            background-color: #696969;
+            color: #fff;
+        }
+
+        .next7 {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            padding: 8px 10px 8px 12px;
+            background-color: #696969;
+            color: #fff;
+        }
+
+        span:hover {
+            cursor: pointer;
+        }
     }
 
     .Rig {

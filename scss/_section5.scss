@@ -2,49 +2,75 @@
 
 .mov_wrap {
     width: 1200px;
-    height: 500px;
+    height: 420px;
     margin: 40px auto;
     border: 1px solid #d8d8d8;
+    position: relative;
+
+    .mov_mid:not(:nth-of-type(1)) {
+        display: none;
+    }
 
     >div {
-        margin: 40px 0 -20px 60px;
+        margin: 36px 0 -20px 60px;
 
         h2 {
             font-size: 16px;
             font-weight: 500;
-
         }
+    }
+
+    .mov_midwrap {
+        display: flex;
+        width: 1200px;
+        height: 420px;
     }
 
     .mov_mid {
         display: flex;
-        width: 500px;
-        ;
+        width: 1200px;
 
         .mov {
             h3 {
                 font-size: 15px;
                 font-weight: 500;
-                margin-top: 6px
+                margin-top: 6px;
+                white-space: nowrap;
             }
         }
 
         .with {
-            margin-left: 20px;
+            margin-left: 80px;
 
-            .movlist {
-                width: 420px;
+            .withname {
+                font-size: 13px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .with_book {
                 display: flex;
-                justify-content: space-between;
-
-                img {
-                    width: 136px;
-                    height: 76px;
-                }
+                width: 420px;
+            }
+            .with_book2 {
+                display: flex;
+                width: 420px;
+            }
+            .with_book3 {
+                display: flex;
+                width: 420px;
             }
 
             .box {
-                
+                img {
+                    width: 130px;
+                    height: auto;
+                }
+            }
+
+            .textbox {
+                margin-left: 20px;
+
                 h3 {
                     font-size: 14px;
                     font-weight: 600;
@@ -60,7 +86,42 @@
                     color: #a8a8a8;
                     font-weight: 400;
                 }
+
+                h6 {
+                    font-size: 12px;
+                    color: #6699cc;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: #3a3a3a;
+                }
+
             }
         }
+    }
+
+    .prev5 {
+        position: absolute;
+        top: 48%;
+        left: 0;
+        padding: 8px 12px 8px 10px;
+        background-color: #696969;
+        color: #fff;
+    }
+
+    .next5 {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        padding: 8px 10px 8px 12px;
+        background-color: #696969;
+        color: #fff;
+    }
+    span:hover {
+        cursor: pointer;
     }
 }

@@ -1,0 +1,113 @@
+.section6_wrap {
+    width: 1200px;
+    height: 460px;
+    margin: 40px auto;
+    border: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+
+    .cardnews_wrap {
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: -26px 0 20px 0;
+        }
+
+        margin-left: 60px;
+        width: 350px;
+        height: 350px;
+        position: relative;
+
+        .cardnews {
+            display: flex;
+
+            img {
+                width: 350px;
+                height: 350px;
+            }
+        }
+
+        .cardimg:not(:nth-of-type(1)) {
+            display: none;
+        }
+    }
+
+    .prev6 {
+        position: absolute;
+        top: 44%;
+        left: 0;
+        padding: 8px 10px 8px 8px;
+        background-color: rgba(95, 95, 95, 0.5);
+        color: #fff;
+    }
+
+    .next6 {
+        position: absolute;
+        top: 44%;
+        right: 0;
+        padding: 8px 8px 8px 10px;
+        background-color: rgba(95, 95, 95, 0.5);
+        color: #fff;
+    }
+
+    span:hover {
+        cursor: pointer;
+    }
+
+    .cnyes {
+        width: 686px;
+        height: 460px;
+        margin-left: 68px;
+        border-left: 1px solid #d8d8d8;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 26px 0 20px 50px;
+        }
+
+        .cnyes_all {
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 158px;
+                height: 111px;
+                border: 1px solid #999999;
+            }
+
+            h2 {
+                font-size: 12px;
+                font-weight: 500;
+                margin: 0;
+            }
+            h3 {
+                font-size: 12px;
+                font-weight: 400;
+                color: #999;
+            }
+        }
+
+        .cnyes_top {
+            div {
+                width: 158px;
+            }
+
+            height: 170px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cnyes_bot {
+            div {
+                width: 158px;
+            }
+            margin-top: 30px;
+            height: 170px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

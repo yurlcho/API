@@ -22,7 +22,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['고래'];
+        const querys = ['마침내 멸망하는 여름'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
@@ -33,24 +33,26 @@ async function bookData() {
             })
 
             for (let j = 0; j < 1; j++) {
-                $('.with_book').eq(i).prepend('<div class="box"></div>');
-                const div = $('.with_book').eq(i).find('.box').last();
+                $('.Cen_bookimg2').eq(i).prepend('<div class="box"></div>');
+                const div = $('.Cen_bookimg2').eq(i).find('.box').last();
 
-                div.append("<img src=" + book[j].thumbnail + "/>");
+                div.append("<img src=https://image.yes24.com/goods/127167526/XL" + book[j] + "/>");
             }
 
             for (let k = 0; k < 1; k++) {
-                $('.with_book_text').eq(i).append('<div class="textbox"></div>');
-                const div = $('.with_book_text').eq(i).find('.textbox').last();
+                $('.Cen_booktext2').eq(i).append('<div class="textbox"></div>');
+                const div = $('.Cen_booktext2').eq(i).find('.textbox').last();
 
-                div.append("<h6>" + "마치 팀 버튼이 <토지>를 쓴 것 같다" + "</h6>")
+                div.append("<h6>" + "여름이 오지 않는다면" + "</h6>")
+                div.append("<h6>" + "나는 사랑하는 마음만을 남겨 두고 갈 거예요" + "</h6>")
+                let content = data.documents[k].contents;
+                let str = content.substring(0, 230);
+                div.append("<p>" + str + "..</p>");
+                
                 div.append("<h4>" + book[k].title + "</h4>");
                 div.append("<h5>" + book[k].authors + "</h5>");
                 div.append("<h5>| " + book[k].publisher + "</h5>");
-
-                let content = data.documents[k].contents;
-                let str = content.substring(0, 138);
-                div.append("<p>" + str + "...</p>");
+                div.append("<h3>" + "9,900" + "원</h3>");
             }
         })
     } catch (error) {
