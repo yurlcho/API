@@ -1,15 +1,19 @@
 // 카드 뉴스로 보는
 function prev() {
   $('.cardimg:last').prependTo('.cardnews');
-  $('.cardimg').hide();
-  $('.cardimg:first').show();
+  $('.cardnews').css('margin-left', '-350px');
+  $('.cardnews').stop().animate({ marginLeft: 0 }, 800);
 }
 
 function next() {
-  $('.cardimg:first').appendTo('.cardnews');
-  $('.cardimg').hide();
-  $('.cardimg:first').show();
+  $('.cardnews').stop().animate({ marginLeft: '-350px' }, 800, function () {
+    $('.cardimg:first').appendTo('.cardnews');
+    $('.cardnews').css({ marginLeft: 0 });
+  });
 }
 
-$('.prev6').on('click', prev);
-$('.next6').on('click', next);
+setInterval(next, 2500);
+
+$('.prev6').click(prev);
+$('.next6').click(next);
+

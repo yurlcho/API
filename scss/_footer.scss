@@ -1,0 +1,137 @@
+.footer_wrap1 {
+    width: 100%;
+    height: 44px;
+    background-color: #dfdfdf;
+    border: 1px solid #d8d8d8;
+    margin-top: 40px;
+
+    .footer_1200_1 {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(50%);
+        margin: 0 auto;
+
+        .footerLi {
+            width: 680px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+
+                li {
+                    font-size: 12px;
+                    color: #666;
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        border-right: solid 1px #ccc;
+                        height: 10px;
+                        right: -8px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                li:last-child::after {
+                    display: none;
+                }
+
+                .font_b {
+                    font-weight: 500;
+                    color: #333;
+                }
+            }
+        }
+
+        .fticon {
+            display: flex;
+          line-height: 50%;
+            img {
+                width: 80px;
+                height: auto;
+                margin-top: -4px;
+            } 
+
+            select {
+                font-size: 12px;
+                height: 18px;
+                color: #666;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+
+.footer_wrap2 {
+    width: 100%;
+    height: 260px;
+    background-color: #dfdfdf;
+    border-bottom: 1px solid #d8d8d8;
+
+    .footer_all {
+        width: 1200px;
+        margin: 0 auto;
+
+        .fw_top {
+            width: 1200px;
+            display: flex;
+
+            img {
+                margin: 12px 20px 0 0;
+                width: 162px;
+                height: 123px;
+            }
+
+            h2 {
+                font-size: 13px;
+                color: #555;
+                margin: 20px 0 6px 0;
+            }
+            h4 {
+                
+                font-size: 11px;
+                color: #999;
+                font-weight: 400;
+                line-height: 20px;
+            }
+
+            .customer {
+
+                margin-left: 560px;
+                h2 {
+                    font-size: 15px;
+                    color: #999;
+                    font-weight: 500;
+                }
+                p {
+                    font-size: 11px;
+                    color: #666;
+
+                    span {
+                        font-size: 13px;
+                        color: #333;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        
+        .fw_bot {
+            width: 1200px;
+            margin: 0 auto;
+
+            img {
+                margin: 0 auto;
+                display: block;
+                margin-top: 8px;
+                width: 1100px;
+                height: auto;
+            }
+        }
+    }
+}

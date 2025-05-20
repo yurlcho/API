@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+#category_wrap {
+  width: 100%;
+  height: 38px;
+  background-color: #097cff;
+  margin: 0 auto;
+}
+#category_wrap #h_category {
+  width: 1200px;
+  height: 38px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  font-size: 11px;
+}
+#category_wrap #h_category a {
+  color: #ffffff;
+}
+#category_wrap #h_category .cate_L {
+  width: 540px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+#category_wrap #h_category #R {
+  display: flex;
+}
+#category_wrap #h_category .cate_R {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+#category_wrap #h_category .glo {
+  margin-left: 16px;
+}
+
+#search_wrap {
+  width: 100%;
+  height: 112px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e2e2e2;
+  line-height: 50%;
+}
+#search_wrap .h_search {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#search_wrap .h_search .h_search2 {
+  display: flex;
+  align-items: center;
+}
+#search_wrap .h_search .h_search2 fieldset {
+  width: 520px;
+  height: 52px;
+  border: 2px solid #007aff;
+  border-radius: 4px;
+  margin-left: 50px;
+}
+#search_wrap .h_search .h_search2 fieldset input {
+  width: 430px;
+  height: 48px;
+  border: none;
+  margin-left: 18px;
+}
+#search_wrap .h_search .h_search2 fieldset button {
+  width: 60px;
+  height: 48px;
+  border: 0;
+  vertical-align: top;
+  background: url(/API/img/gnbN4.png) no-repeat 0 0;
+  -webkit-appearance: button;
+}
+#search_wrap .h_search #h_AD {
+  width: 180px;
+  height: 110px;
+  margin-left: 50px;
+}
+#search_wrap .h_search #h_AD img {
+  width: 100%;
+  height: 110px;
+}
+
+#find_wrap {
+  margin: 0 auto;
+  width: 100%;
+  height: 44px;
+  border-bottom: 3px solid #007aff;
+  display: flex;
+  line-height: 38px;
+  align-items: center;
+}
+#find_wrap .h_find {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+#find_wrap .h_find .R_find {
+  display: flex;
+  font-weight: 500;
+  width: 800px;
+}
+#find_wrap .h_find .R_find em {
+  margin: 16px 10px 0 10px;
+  float: left;
+  width: 1px;
+  height: 10px;
+  border-right: solid 1px #ccc;
+}
+#find_wrap .h_find .R_find .list_1 {
+  width: 113px;
+  height: 43px;
+  background-color: #0080ff;
+  font-size: 13px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 {
+  display: none;
+  position: absolute;
+  border: 3px solid #007aff;
+  width: 113px;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 li {
+  position: relative;
+  padding-left: 16px;
+  text-align: left;
+  background-color: #fff;
+  z-index: 20;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 li a {
+  color: #555;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 li:hover {
+  background-color: #0080ff;
+}
+#find_wrap .h_find .R_find .list_1 .list_sub1 li:hover a {
+  color: #fff;
+}
+#find_wrap .h_find .R_find .list_2 {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 38px;
+  margin-left: 14px;
+}
+#find_wrap .h_find .R_find .list_2 a {
+  color: #0080ff;
+}
+#find_wrap .h_find .R_find .list_3 {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+#find_wrap .h_find .list_4 {
+  width: 460px;
+  display: flex;
+  justify-content: space-between;
+}
+#find_wrap .h_find .list_4 a {
+  color: #666;
+}
+#find_wrap .h_find .list_4 li:first-child a {
+  color: rgb(102, 190, 255);
+}
+#find_wrap a {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.footer_wrap1 {
+  width: 100%;
+  height: 44px;
+  background-color: #dfdfdf;
+  border: 1px solid #d8d8d8;
+  margin-top: 40px;
+}
+.footer_wrap1 .footer_1200_1 {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(50%);
+  margin: 0 auto;
+}
+.footer_wrap1 .footer_1200_1 .footerLi {
+  width: 680px;
+}
+.footer_wrap1 .footer_1200_1 .footerLi ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_wrap1 .footer_1200_1 .footerLi ul li {
+  font-size: 12px;
+  color: #666;
+  position: relative;
+}
+.footer_wrap1 .footer_1200_1 .footerLi ul li:after {
+  content: "";
+  position: absolute;
+  border-right: solid 1px #ccc;
+  height: 10px;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer_wrap1 .footer_1200_1 .footerLi ul li:last-child::after {
+  display: none;
+}
+.footer_wrap1 .footer_1200_1 .footerLi ul .font_b {
+  font-weight: 500;
+  color: #333;
+}
+.footer_wrap1 .footer_1200_1 .fticon {
+  display: flex;
+  line-height: 50%;
+}
+.footer_wrap1 .footer_1200_1 .fticon img {
+  width: 80px;
+  height: auto;
+  margin-top: -4px;
+}
+.footer_wrap1 .footer_1200_1 .fticon select {
+  font-size: 12px;
+  height: 18px;
+  color: #666;
+  margin-left: 6px;
+}
+
+.footer_wrap2 {
+  width: 100%;
+  height: 260px;
+  background-color: #dfdfdf;
+  border-bottom: 1px solid #d8d8d8;
+}
+.footer_wrap2 .footer_all {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer_wrap2 .footer_all .fw_top {
+  width: 1200px;
+  display: flex;
+}
+.footer_wrap2 .footer_all .fw_top img {
+  margin: 12px 20px 0 0;
+  width: 162px;
+  height: 123px;
+}
+.footer_wrap2 .footer_all .fw_top h2 {
+  font-size: 13px;
+  color: #555;
+  margin: 20px 0 6px 0;
+}
+.footer_wrap2 .footer_all .fw_top h4 {
+  font-size: 11px;
+  color: #999;
+  font-weight: 400;
+  line-height: 20px;
+}
+.footer_wrap2 .footer_all .fw_top .customer {
+  margin-left: 560px;
+}
+.footer_wrap2 .footer_all .fw_top .customer h2 {
+  font-size: 15px;
+  color: #999;
+  font-weight: 500;
+}
+.footer_wrap2 .footer_all .fw_top .customer p {
+  font-size: 11px;
+  color: #666;
+}
+.footer_wrap2 .footer_all .fw_top .customer p span {
+  font-size: 13px;
+  color: #333;
+  font-weight: 600;
+}
+.footer_wrap2 .footer_all .fw_bot {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer_wrap2 .footer_all .fw_bot img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 8px;
+  width: 1100px;
+  height: auto;
+}

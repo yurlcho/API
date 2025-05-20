@@ -5,50 +5,52 @@
     border: 1px solid #d8d8d8;
     display: flex;
     align-items: center;
-
-    .cardnews_wrap {
-
-        h2 {
+    .lef {
+       h2 {
             font-size: 16px;
             font-weight: 500;
-            margin: -26px 0 20px 0;
+            margin: -15px 0 20px 60px;
         }
+    }
 
+    .cardnews_wrap {
+        overflow: hidden;
         margin-left: 60px;
         width: 350px;
         height: 350px;
         position: relative;
 
         .cardnews {
+            width: fit-content;
             display: flex;
+            overflow: hidden;
+            position: absolute;
 
             img {
                 width: 350px;
                 height: 350px;
             }
         }
-
-        .cardimg:not(:nth-of-type(1)) {
-            display: none;
-        }
     }
 
     .prev6 {
         position: absolute;
-        top: 44%;
+        top: 46%;
         left: 0;
         padding: 8px 10px 8px 8px;
         background-color: rgba(95, 95, 95, 0.5);
         color: #fff;
+        z-index: 200;
     }
 
     .next6 {
         position: absolute;
-        top: 44%;
+        top: 46%;
         right: 0;
         padding: 8px 8px 8px 10px;
         background-color: rgba(95, 95, 95, 0.5);
         color: #fff;
+        z-index: 200;
     }
 
     span:hover {
