@@ -23,24 +23,54 @@
 
 .book_pfwrap {
     width: 1200px;
-    height: 650px;
+    height: 700px;
     margin: 0 auto;
     display: flex;
-    background-color: #eee;
 
     .bookimg_3D {
-        .front {
-            width: 400px;
-            height: auto;
-            box-shadow: 4px 30px 14px #c4c4c4;
+        margin-top: 40px;
+
+        .book3D {
+            .front {
+                width: 400px;
+                height: auto;
+                box-shadow: 4px 12px 14px #c4c4c4;
+            }
+            .back {
+                width: 400px;
+                height: auto;
+            }
+
+        }
+
+        .bookimg_btn {
+            text-align: center;
+            margin-top: 18px;
+        }
+
+        button {
+            width: 96px;
+            height: 30px;
+            background-color: #fff;
+            font-size: 12px;
+            color: #121212;
+            font-weight: 500;
+            border: solid 1px #e5e5e5;
+            border-radius: 4px;
+            line-height: 30px;
+            text-align: center;
         }
     }
 
     .book_sub {
-        width: 750px;
+        width: 480px;
+        height: 650px;
         margin-left: 50px;
+        margin-top: 40px;
+
         .sub_le {
             .sub1_1 {
+                width: 600px;
                 border-bottom: solid 1px #e5e5e5;
                 height: 160px;
 
@@ -101,14 +131,12 @@
                     font-size: 12px;
                     color: #333;
                     position: relative;
-                    margin-left: 4px;
-                    margin-right: 16px;
+                    margin-right: 14px;
 
                     .star_score {
                         font-size: 20px;
                         color: #000;
                         font-weight: 600;
-                        margin-right: 10px;
                         border: none;
                     }
                 }
@@ -118,12 +146,12 @@
                     align-items: center;
 
                     p {
-                        margin-right: 12px;
+                        margin-right: 6px;
                     }
 
                     img {
-                        width: 58px;
-                        height: 24px;
+                        width: 50px;
+                        height: 20px;
                     }
                 }
             }
@@ -133,28 +161,33 @@
     .sub2 {
         border-bottom: solid 0.5px #e5e5e5;
         padding: 20px 0 24px 0;
+
         tr {
             font-size: 12px;
             color: #666;
             text-align: left;
 
-            th  {
+            th {
                 width: 100px;
                 font-weight: 400;
                 height: 30px;
             }
+
             .th_b {
                 font-weight: 600;
             }
+
             .clr {
-                color:#f66;
+                color: #f66;
             }
+
             .clred {
                 font-size: 24px;
-                color:#f66;
+                color: #f66;
                 font-weight: 600;
                 margin-left: -4px;
             }
+
             .help {
                 border: solid 0.5px #e5e5e5;
                 padding: 0 6px 2px 6px;
@@ -181,19 +214,19 @@
     }
 
     .sub_4 {
-        padding: 20px 0 24px 0;       
+        padding: 20px 0 24px 0;
+
         table {
             font-size: 12px;
             color: #666;
             text-align: left;
-            tr {
 
-            }
             th {
                 font-weight: 400;
                 width: 100px;
             }
         }
+
         .bgblue {
             display: flex;
             align-items: baseline;
@@ -213,22 +246,27 @@
                 font-size: 11px;
                 margin-left: 20px;
             }
+
             p {
                 font-size: 12px;
             }
+
             .p1 {
                 font-weight: 500;
             }
+
             .p2 {
                 color: #666;
                 margin-left: 6px;
             }
         }
+
         .free {
             font-size: 12px;
             color: #666;
             margin-top: 16px;
             line-height: 50%;
+
             span {
                 border: 1px solid #e5e5e5;
                 padding: 0 6px 2px 6px;
@@ -236,6 +274,7 @@
             }
         }
     }
+
     .sub_5 {
         width: 480px;
         height: 30px;
@@ -246,11 +285,128 @@
             color: #666;
             margin-left: 20px;
             padding-top: 5px;
+
             span {
                 color: #69c;
             }
         }
     }
 
-    
+
+    .sub_ri {
+        width: 220px;
+        background-color: #ebebeb;
+        padding-left: 20px;
+        height: 430px;
+        margin-top: 199px;
+        border-top: 1px solid #e5e5e5;
+        margin-left: 43px;
+
+        .count {
+            width: 180px;
+            border-bottom: 1px solid #cacaca;
+            height: 180px;
+
+            h2 {
+                font-size: 12px;
+                font-weight: 500;
+                color: #333;
+                margin: 16px 0 14px;
+            }
+        }
+
+        .ct_btn {
+            display: flex;
+            flex-direction: column;
+
+            .countbtn {
+                display: flex;
+
+                p {
+                    font-size: 12px;
+                    color: #666;
+                    margin-right: 10px;
+                }
+
+                input {
+                    width: 70px;
+                    text-align: center;
+                    height: 20px;
+                    line-height: 20px;
+                    overflow: hidden;
+                    border: none;
+                    border-color: transparent;
+                    font-size: 12px;
+                    color: #333;
+                    -webkit-appearance: none;
+                    border-radius: 0;
+                    outline-style: none;
+                    background-color: transparent;
+                    vertical-align: top;
+                    background-color: #fff;
+                }
+
+                button {
+                    line-height: 16px;
+                    top: 0;
+                    width: 20px;
+                    height: 20px;
+                    border: solid 1px #ebebeb;
+                    border-right-color: #d8d8d8;
+                    border-bottom-color: #d8d8d8;
+                    background-color: transparent;
+                }
+            }
+
+            .cart {
+                width: 180px;
+                height: 40px;
+                border: 1px solid #0080ff;
+                border-bottom: 1px solid #0080ff;
+                border-right: 1px solid #0080ff;
+                background-color: #0080ff;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 13px;
+                margin: 20px 0 6px;
+            }
+
+            .buy {
+                width: 180px;
+                height: 40px;
+                border: 1px solid #199db3;
+                border-bottom: 1px solid #168da1;
+                border-right: 1px solid #168da1;
+                background-color: #199db3;
+                border-radius: 4px;
+                color: #fff;
+                font-size: 13px;
+            }
+        }
+
+        .count_bot {
+            p {
+                font-size: 12px;
+                color: #666;
+                margin-top: 6px;
+            }
+
+            p:nth-of-type(1) {
+                margin-top: 16px;
+            }
+
+            button {
+                width: 180px;
+                height: 40px;
+                background-color: #fff;
+                color: #333;
+                border: 1px solid #cacaca;
+                border-radius: 4px;
+            }
+
+            button:nth-of-type(1) {
+                margin: 20px 0 6px;
+            }
+        }
+    }
 }

@@ -112,9 +112,14 @@
         <!-- section1 -->
         <div class="book_pfwrap">
             <div class="bookimg_3D">
-                <img class="front" src="img/sub_book_f.jpg" alt="book">
-                <img class="side" src="" alt="">
-                <img src="back" alt="">
+                <div class="book3D">
+                    <img class="front" src="img/sub_book_f.jpg" alt="book">
+                </div>
+                <div class="bookimg_btn">
+                    <button>미리보기</button>
+                    <button>사이즈비교</button>
+                    <button>공유하기</button>
+                </div>
             </div>
             <div class="book_sub">
                 <div class="sub_le">
@@ -189,14 +194,14 @@
                 <div class="count">
                     <h2>판매중</h2>
                     <div class="ct_btn">
-                        <p>수량</p>
                         <div class="countbtn">
-                            <button class="minus"><img src="img/minus.png" alt="minus"></button>
+                            <p>수량</p>
+                            <button class="minus">－</button>
                             <input type="text" value="1" name="count" class="price_value">
-                            <button class="plus"><img src="img/plus.png" alt="plus"></button>
+                            <button class="plus">＋</button>
                         </div>
-                        <button>카트에 넣기</button>
-                        <button>바로구매</button>
+                        <button class="cart">카트에 넣기</button>
+                        <button class="buy">바로구매</button>
                     </div>
                 </div>
 
@@ -207,6 +212,35 @@
                     <button>리스트에 넣기</button>
                     <button>eBook 출간 알림신청</button>
                 </div>
+            </div>
+        </div>
+
+        <!-- section2 -->
+        <div class="section2_wrap">
+            <ul class= "ta_list">
+                <li class="ta"><a href="#">한강 신작『빛과 실』</a>
+                    <ul class="ta_sub">
+                        <li class="taimg"><img src="img/tabhv_1.jpg" alt="#"></li>
+                    </ul>
+                </li>
+                <li class="ta"><a href="#">현재의 고전, 미래의 고전 ＜한강＞</a>
+                    <ul class="ta_sub">
+                        <li class="taimg"><img src="img/tabhv_2.jpg" alt="#"></li>
+                    </ul>
+                </li>
+                <li class="ta"><a href="#">5월의 굿즈: 투명 트롤리</a>
+                    <ul class="ta_sub">
+                        <li class="taimg"><img src="img/tabhv_3.jpg" alt="#"></li>
+                    </ul>
+                </li>
+                <li class="ta"><a href="#">기간 한정 특가 도서</a>
+                    <ul class="ta_sub">
+                        <li class="taimg"><img src="img/tabhv_4.jpg" alt="#"></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sub_ad1">
+                <img src="img/sub_ad.jpg" alt="">
             </div>
         </div>
 
@@ -242,6 +276,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- js -->
+        <script src="/API/sub_js/count.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['마침내 멸망하는 여름'];
+        const querys = ['심장보다 단단한 토마토 한 알'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
@@ -46,7 +46,7 @@ async function bookData() {
                 div.append("<h6>" + "아삭아삭할 겁니다" + "</h6>")
                 div.append("<h6>" + "겨울을 견뎌 본 심장이라서요" + "</h6>")
                 let content = data.documents[k].contents;
-                let str = content.substring(0, 230);
+                let str = content.substring(0, 188);
                 div.append("<p>" + str + "..</p>");
                 
                 div.append("<h4>" + book[k].title + "</h4>");

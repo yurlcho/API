@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.section2_wrap {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #eee;
+    display: flex;
+
+    .ta_list {
+        height: 100px;
+        border: 1px solid #e5e5e5;
+        border-bottom: none;
+        
+
+        .ta {
+            display: flex;
+            height: 25px;
+            line-height: 23px;
+
+            &:not(:nth-of-type(1)) .ta_sub{
+                display: none;
+            }
+        }
+
+        a {
+            font-size: 12px;
+            color: #666;
+            width: 200px;
+            height: 25px;
+            // line-height: ;
+            border-bottom: 1px solid #e5e5e5;
+            border-right: 1px solid #e5e5e5;
+        }
+
+        .ta_sub {
+            .taimg {
+                width: 753px;
+                height: 100px;
+            }
+        }
+    }
+}
