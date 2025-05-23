@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+.wt_wrap {
+    width: 1200px;
+    height: 400px;
+    margin: 40px auto;
+    border: 1px solid #e5e5e5;
+    position: relative;
+
+    h4 {
+        font-size: 13px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    h5 {
+        font-size: 12px;
+        font-weight: 400;
+        color: #999;
+    }
+
+    h3 {
+        font-size: 13px;
+        font-weight: 600;
+        color: #000;
+
+        span {
+            font-size: 12px;
+            color: #333;
+            font-weight: 400;
+        }
+    }
+
+    .wtbook_btn {
+        display: flex;
+        height: 46px;
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        line-height: 42px;
+
+        span {
+            color: #69c;
+        }
+
+        .wbbtn1,
+        .wbbtn2 {
+            border-right: 1px solid #e5e5e5;
+            width: 600px;
+            background-color: #f8f8f8;
+            cursor: pointer;
+        }
+
+        .wbbtn1 {
+            border-right: 1px solid #e5e5e5;
+        }
+
+        .active {
+            background: #fff;
+            border-bottom: none;
+        }
+    }
+
+    .wtbook {
+        width: 1200px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+
+        .wtbook_sub {
+            display: flex;
+
+            img {
+                width: 125px;
+                height: 185px;
+            }
+
+            .wtbox {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                width: 180px;
+                padding-left: 30px;
+
+
+            }
+        }
+
+        .wtbook_sub:not(:nth-of-type(1)) {
+            display: none;
+        }
+    }
+
+    .mabook {
+        width: 1200px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+
+        .mabook_sub {
+            display: flex;
+
+            img {
+                width: 125px;
+                height: 185px;
+            }
+
+            .mabox {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+                width: 180px;
+                padding-left: 30px;
+
+
+            }
+        }
+
+        .mabook_sub:not(:nth-of-type(1)) {
+            display: none;
+        }
+    }
+
+    span:hover {
+        cursor: pointer;
+    }
+
+    .prev_sub1 {
+        position: absolute;
+        top: 190px;
+        left: 0;
+        padding: 8px 12px 8px 10px;
+        background-color: #696969;
+        color: #fff;
+    }
+
+    .next_sub1 {
+        position: absolute;
+        top: 190px;
+        right: 0;
+        padding: 8px 10px 8px 12px;
+        background-color: #696969;
+        color: #fff;
+    }
+}

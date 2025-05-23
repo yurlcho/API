@@ -39,7 +39,7 @@ async function bookData() {
                 div.append("<img src=" + book[j].thumbnail + "/>");
                 div.append("<h4>" + book[j].title + "</h4>");
                 div.append("<h5>" + book[j].authors + "</h5>");
-                div.append("<h3>" + book[j].sale_price + "원</h3>");
+                div.append("<h3>" + book[j].sale_price.toLocaleString() + "원</h3>");
             }
         })
     } catch (error) {

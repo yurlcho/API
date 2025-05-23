@@ -654,19 +654,21 @@ a {
 .section2_wrap {
   width: 1200px;
   height: 100px;
-  margin: 0 auto;
+  margin: 20px auto;
   background-color: #eee;
   display: flex;
+  justify-content: space-between;
+  border: 1px solid #e5e5e5;
 }
 .section2_wrap .ta_list {
   height: 100px;
-  border: 1px solid #e5e5e5;
   border-bottom: none;
 }
 .section2_wrap .ta_list .ta {
   display: flex;
   height: 25px;
   line-height: 23px;
+  background-color: #fff;
 }
 .section2_wrap .ta_list .ta:not(:nth-of-type(1)) .ta_sub {
   display: none;
@@ -682,4 +684,177 @@ a {
 .section2_wrap .ta_list .ta_sub .taimg {
   width: 753px;
   height: 100px;
+}
+.section2_wrap .sub_ad1 img {
+  width: 216px;
+  height: 98px;
+}
+
+.wt_wrap {
+  width: 1200px;
+  height: 400px;
+  margin: 40px auto;
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+.wt_wrap h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+.wt_wrap h5 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+}
+.wt_wrap h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000;
+}
+.wt_wrap h3 span {
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+}
+.wt_wrap .wtbook_btn {
+  display: flex;
+  height: 46px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 42px;
+}
+.wt_wrap .wtbook_btn span {
+  color: #69c;
+}
+.wt_wrap .wtbook_btn .wbbtn1,
+.wt_wrap .wtbook_btn .wbbtn2 {
+  border-right: 1px solid #e5e5e5;
+  width: 600px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+.wt_wrap .wtbook_btn .wbbtn1 {
+  border-right: 1px solid #e5e5e5;
+}
+.wt_wrap .wtbook_btn .active {
+  background: #fff;
+  border-bottom: none;
+}
+.wt_wrap .wtbook {
+  width: 1200px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.wt_wrap .wtbook .wtbook_sub {
+  display: flex;
+}
+.wt_wrap .wtbook .wtbook_sub img {
+  width: 125px;
+  height: 185px;
+}
+.wt_wrap .wtbook .wtbook_sub .wtbox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 180px;
+  padding-left: 30px;
+}
+.wt_wrap .wtbook .wtbook_sub:not(:nth-of-type(1)) {
+  display: none;
+}
+.wt_wrap .mabook {
+  width: 1200px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.wt_wrap .mabook .mabook_sub {
+  display: flex;
+}
+.wt_wrap .mabook .mabook_sub img {
+  width: 125px;
+  height: 185px;
+}
+.wt_wrap .mabook .mabook_sub .mabox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 180px;
+  padding-left: 30px;
+}
+.wt_wrap .mabook .mabook_sub:not(:nth-of-type(1)) {
+  display: none;
+}
+.wt_wrap span:hover {
+  cursor: pointer;
+}
+.wt_wrap .prev_sub1 {
+  position: absolute;
+  top: 190px;
+  left: 0;
+  padding: 8px 12px 8px 10px;
+  background-color: #696969;
+  color: #fff;
+}
+.wt_wrap .next_sub1 {
+  position: absolute;
+  top: 190px;
+  right: 0;
+  padding: 8px 10px 8px 12px;
+  background-color: #696969;
+  color: #fff;
+}
+
+.detail_wrap {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.detail_wrap .dtbtn_wrap {
+  display: flex;
+  height: 58px;
+}
+.detail_wrap .dtbtn_wrap .dtbtn {
+  display: flex;
+}
+.detail_wrap .dtbtn_wrap .bookdt, .detail_wrap .dtbtn_wrap .review, .detail_wrap .dtbtn_wrap .deliver {
+  width: 170px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  line-height: 56px;
+}
+.detail_wrap .dtbtn_wrap .adc_color {
+  background-color: #333;
+  color: #fff;
+}
+.detail_wrap .dtbtn_wrap .dtbuy {
+  display: flex;
+}
+.detail_wrap .dtbtn_wrap .dtbuy h2 {
+  font-size: 24px;
+  color: #f66;
+}
+.detail_wrap .dtbtn_wrap .dtbuy h2 span {
+  font-size: 13px;
+  font-weight: 400;
+}
+.detail_wrap .dtbtn_wrap .dtbuy button {
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  border: solid 1px #ebebeb;
+  border-radius: 4px;
+  line-height: 30px;
+}
+.detail_wrap .dtbtn_wrap .dtbuy .cart_s {
+  background-color: #0080FF;
+}
+.detail_wrap .dtbtn_wrap .dtbuy .buy_s {
+  background-color: #199DB3;
 }

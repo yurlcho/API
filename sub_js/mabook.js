@@ -1,6 +1,6 @@
 async function fetchBooks(query) {
     const params = new URLSearchParams({
-        target: "title",
+        target: "name",
         query,
         size: 50
     });
@@ -22,26 +22,24 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['문학동네시인선', '도쿄 에일리언즈', '여름'];
+        const querys = ['양귀자', '창비청소년', '이꽃님'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
 
-            //썸네일이 빈 문자열인것은 제외
             const origin = data.documents;
             let book = origin.filter((val) => {
                 return val.thumbnail != '' && val.contents != '';
             })
 
-            // for문 (8개)
-            for (let j = 0; j < 4; j++) {
-                $('.thisbook').eq(i).append('<div class="box"></div>');
-                const div = $('.thisbook').eq(i).find('.box').last();
+            for (let j = 0; j < 6; j++) {
+                $('.mabook_sub').eq(i).append('<div class="mabox"></div>');
+                const div = $('.mabook_sub').eq(i).find('.mabox').last();
 
                 div.append("<img src=" + book[j].thumbnail + "/>");
                 div.append("<h4>" + book[j].title + "</h4>");
                 div.append("<h5>" + book[j].authors + "</h5>");
-                div.append("<h3>" + book[j].sale_price.toLocaleString() + "원</h3>");
+                div.append("<h3>" + book[j].sale_price.toLocaleString() + "원 <span>(10%할인)</sapn></h3>");
             }
         })
     } catch (error) {
