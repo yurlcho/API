@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid #e5e5e5;
+    position: relative;
 
     .ta_list {
         height: 100px;
@@ -34,13 +35,20 @@
             // line-height: ;
             border-bottom: 1px solid #e5e5e5;
             border-right: 1px solid #e5e5e5;
+            padding-left: 10px;
         }
 
         .ta_sub {
             .taimg {
+                position: absolute;
+                top: 0;
                 width: 753px;
                 height: 100px;
             }
+        }
+
+        .full {
+            background-color: #ececec;
         }
     }
     .sub_ad1 {

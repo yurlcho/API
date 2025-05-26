@@ -339,6 +339,9 @@ a {
   font-weight: 500;
   margin: 20px 0 26px 40px;
 }
+.sc1_wrap .Cen a {
+  display: flex;
+}
 .sc1_wrap .Cen .Cen_bookwrap {
   display: flex;
   position: relative;

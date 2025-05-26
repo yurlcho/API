@@ -22,7 +22,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['양귀자', '고선경', '이꽃님'];
+        const querys = ['당신과 아침에 싸우면 밤에는 입맞출 겁니다'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
@@ -32,13 +32,12 @@ async function bookData() {
                 return val.thumbnail != '' && val.contents != '';
             })
 
-            for (let j = 0; j < 6; j++) {
-                $('.mabook_sub').eq(i).append('<div class="mabox"></div>');
-                const div = $('.mabook_sub').eq(i).find('.mabox').last();
+            for (let j = 0; j < 1; j++) {
+                $('.other').eq(i).append('<div class="otherbox"></div>');
+                const div = $('.other').eq(i).find('.otherbox').last();
 
                 div.append("<img src=" + book[j].thumbnail + "/>");
                 div.append("<h4>" + book[j].title + "</h4>");
-                div.append("<h5>" + book[j].authors + "</h5>");
                 div.append("<h3>" + book[j].sale_price.toLocaleString() + "원 <span>(10%할인)</sapn></h3>");
             }
         })
