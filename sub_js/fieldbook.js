@@ -22,7 +22,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['소년이 온다', '작별하지 않는다', '급류','채식주의자','모우어','아침을 볼 때마다 당신을 떠올릴 거야', '모순','아버지의 해방일지','하얼빈','홍학의 자리','파과','아몬드','아가미','여름과 루비','두고온 여름','일억 번째 여름'];
+        const querys = ['소년이 온다', '작별하지 않는다', '급류','채식주의자','모우어','시한부', '모순','아버지의 해방일지','하얼빈','홍학의 자리','파과','아몬드','아가미','여름과 루비','두고온 여름','일억 번째 여름'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
