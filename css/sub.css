@@ -81,6 +81,7 @@ a {
   height: 48px;
   border: none;
   margin-left: 18px;
+  outline: none;
 }
 #search_wrap .h_search .h_search2 fieldset button {
   width: 60px;
@@ -596,9 +597,9 @@ a {
 .book_pfwrap .sub_ri {
   width: 220px;
   background-color: #ebebeb;
-  padding-left: 20px;
+  padding-left: 15px;
   height: 430px;
-  margin-top: 199px;
+  margin-top: 198px;
   border-top: 1px solid #e5e5e5;
   margin-left: 43px;
 }

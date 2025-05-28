@@ -81,6 +81,7 @@ a {
   height: 48px;
   border: none;
   margin-left: 18px;
+  outline: none;
 }
 #search_wrap .h_search .h_search2 fieldset button {
   width: 60px;
