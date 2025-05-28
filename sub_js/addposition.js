@@ -15,5 +15,4 @@ $(window).scroll(function () {
     } else {
         $(".deliver").removeClass("adc_color");
     }
-
 })

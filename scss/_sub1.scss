@@ -28,24 +28,68 @@
     display: flex;
 
     .bookimg_3D {
-        margin-top: 40px;
+        margin: 50px 30px 0 60px;
+        width: 350px;
+        height: 600px;
+        perspective: 1400px;
+        transform-style: preserve-3d;
 
         .book3D {
-            .front {
-                width: 400px;
-                height: auto;
-                box-shadow: 4px 12px 14px #c4c4c4;
-            }
-            .back {
-                width: 400px;
-                height: auto;
-            }
+            position: relative;
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            cursor: url(/API/img/ico_flip.svg), pointer !important;
+            width: 350px;
+            height: 520px;
+            box-shadow: 20px 12px 14px #c4c4c4;
 
+            .front {
+                width: 350px;
+                height: 520px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
         }
 
+        .book3D:hover {
+            transform: rotateY(40deg);
+        }
+        .book3D.rotate {
+            transform: rotateY(180deg);
+        }
+        .book3D::before {
+            content: "";
+            width: 46px;
+            height: 520px;
+            position: absolute;
+            background-size: cover;
+            background-position: center;
+            transform-origin: left;
+            transform: rotateY(90deg);
+            background-image: url(../img/sub_book_s.jpg);
+            left: 0;
+            top:0;
+        }
+        .book3D::after {
+            content: "";
+            width: 350px;
+            height: 520px;
+            position: absolute;
+            background-image: url(../img/sub_book_b.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left;
+            transform-origin: left;
+            transform: rotateY(180deg) translateZ(30px) translateX(-346px);
+            left: 2px;
+            backface-visibility: hidden;
+        }
+    
+
         .bookimg_btn {
-            text-align: center;
-            margin-top: 18px;
+            margin: 34px 0 0 25px;
+            position: absolute;
         }
 
         button {
@@ -65,7 +109,7 @@
     .book_sub {
         width: 480px;
         height: 650px;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-top: 40px;
 
         .sub_le {
