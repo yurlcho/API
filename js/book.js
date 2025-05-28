@@ -1,6 +1,6 @@
 async function fetchBooks(query) {
     const params = new URLSearchParams({
-        target: "title",
+        target: "name",
         query,
         size: 50
     });
@@ -22,7 +22,7 @@ async function fetchBooks(query) {
 
 async function bookData() {
     try {
-        const querys = ['문학동네시인선', '도쿄 에일리언즈', '여름'];
+        const querys = ['차정은', '도쿄 에일리언즈', '여름'];
 
         querys.forEach(async (query, i) => {
             const data = await fetchBooks(query);
