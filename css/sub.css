@@ -1471,3 +1471,20 @@ a {
   font-weight: 400;
   border-bottom: 1px solid #d8d8d8;
 }
+.detail_wrap .upbox {
+  box-shadow: 0px 4px 8px rgba(185, 185, 185, 0.7);
+  background-color: #fff;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  position: sticky;
+  bottom: 60px;
+  margin-left: 1060px;
+  margin-bottom: 40px;
+}
+.detail_wrap .upbox a {
+  text-align: center;
+  display: block;
+}
