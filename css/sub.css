@@ -1144,6 +1144,10 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.detail_wrap .dtsub_wrap .bsyc .youth {
+  position: sticky;
+  top: 640px;
+}
 .detail_wrap .dtsub_wrap .bsyc .youth img {
   width: 220px;
   height: auto;
@@ -1157,6 +1161,8 @@ a {
   margin-left: 38px;
   margin-top: 50px;
   padding: 0 20px;
+  position: sticky;
+  top: 70px;
 }
 .detail_wrap .dtsub_wrap .bestseller h2 {
   font-size: 15px;
@@ -1481,9 +1487,9 @@ a {
   text-align: center;
   line-height: 60px;
   position: sticky;
-  bottom: 60px;
+  bottom: 40px;
   margin-left: 1060px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .detail_wrap .upbox a {
   text-align: center;
